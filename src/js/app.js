@@ -1,5 +1,6 @@
 import json from './parser';
 import read from './reader';
+import GameSaving from './GameSaving';
 
 export default class GameSavingLoader {
   /* eslint-disable */async load() {
@@ -12,13 +13,5 @@ export default class GameSavingLoader {
     } catch(error) {
         throw new Error('Ошибка');
     }
-  }
-}
-
-class GameSaving {
-  constructor(id, created, userInfo) {
-    this.id = id;
-    this.created = created;
-    this.userInfo = userInfo;
   }
 }
